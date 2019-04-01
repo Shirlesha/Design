@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>这是首页页面</title>
+	</head>
+	<body>
+		<!-- <a href="/login">登录</a>
+		<br>
+		<a href="/register">注册</a> -->
+		<ul>
+			{% if userinfo %}
+				<a href="#">hello:{{userinfo}}</a>
+				<br>
+				<a href="/Videolist">进入列表</a>
+				<a href="/quit">退出</a>
+			{% else %}
+				<a href="/login">登录</a>
+				<br>
+				<a href="/register">注册</a>
+			{% endif %}
+		</ul>
+		<ul>
+			{% for book in booklist%}
+				<li>{{book}}</li>
+			{% endfor%}
+
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>详情页</title>
+	</head>
+	<body>
+		{% if userinfo%}
+			<h1>你好：<small>{{userinfo}}</small> </h1>
+		{% endif %}
+		
+		<h1>详情页</h1>
+		<h2>商品{{id}}详细信息</h2>
+		<div>
+			{{details}}
+		</div>
+		<a href="/Videolist">返回</a>
+	</body>
+</html>

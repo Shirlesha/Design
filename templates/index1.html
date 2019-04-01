@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="../static/models.css"/>
+		<!-- <style type="text/css">
+		*{
+			margin: 0px;
+			border: 0px;
+			background-color: antiquewhite;
+		}
+		#contain{
+			width: 1000px;
+			margin: 0 auto;
+		}
+		#left{
+			float: left;
+		}
+		#right{
+			float:right;
+			display: block;
+		}
+		ul{
+			border: 4px dashed pink;
+			height: 44px;
+			width: 250px;
+			margin-top: 10px;
+			font-size: 30px;
+			line-height: 30px;
+		}
+		ul>li{
+			margin-top: 6px;
+			list-style: none;
+			float: left;
+			margin-right: 30px;
+		}
+		.zuo{
+			margin-left: 61px;
+		}
+		a{
+			text-decoration: none;
+			color: green;
+		}
+		#c_cainter{
+			position: absolute ;
+			top: 200px;
+		}
+		</style> -->
+	</head>
+	<body>
+		<div id="contain">
+			<div id="content">
+				<div id="top">
+					<div id="left">
+						<ul>
+							{% if userinfor %}
+							<p>hello{{user}}</p>
+							{% endif %}
+						</ul>
+					</div> 
+					<div id="right">
+						<ul>
+							<li class="zuo"><a href="/login1">登录</a></li>
+							<li><a href="/register1">注册</a></li>
+						</ul>
+						<ul>
+							<li><a href="/list1">进入列表</a></li>
+							<li><a href="quit1">退出</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="center">
+					<div id="c_cainter">
+						<p>1</p>
+						<p>2</p>
+						<p>3</p>
+						<p>4</p>
+						<p>5</p>
+						<p>6</p>
+						<p>7</p>
+						<p>8</p>
+						<p>9</p>
+						<p>10</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
